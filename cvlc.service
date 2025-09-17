@@ -1,0 +1,13 @@
+[Unit]
+Description=Console VLC Player
+
+[Service]
+EnvironmentFile=-/etc/default/cvlc
+User=cvlc
+Restart=always
+RestartSec=10
+ExecStartPre=curl -sI $CVLC_URL
+ExecStart=/usr/bin/cvlc -q --control lirc --lirc-file /etc/lirc/cvlc.lircrc --vout drm_vout --aout any --ts-standard dvb --http-reconnect $CVLC_URL
+
+[Install]
+WantedBy=multi-user.target

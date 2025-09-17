@@ -1,0 +1,56 @@
+# The vlc config names are from ./src/libvlc-module.c 
+begin
+	prog = vlc
+	button = KEY_UP
+	config = key-next
+end
+
+begin
+	prog = vlc
+	button = KEY_DOWN
+	config = key-prev
+end
+
+begin
+	prog = vlc
+	button = KEY_POWER
+	config = key-quit
+end
+
+begin
+	prog = vlc
+	button = KEY_SUBTITLE
+	config = key-subtitle-toggle
+end
+
+begin
+	prog = vlc
+	button = KEY_STOP
+	config = key-stop
+end
+
+begin
+	prog = vlc
+	button = KEY_PLAY
+	config = key-play
+end
+
+begin
+	prog = vlc
+	button = KEY_REWIND
+	config = key-jump-mshort
+end
+
+begin
+	prog = vlc
+	button = KEY_FORWARD
+	config = key-jump-psport
+end
+
+begin
+	prog = vlc
+	button = KEY_PAUSE
+	config = key-pause
+end
+
+
